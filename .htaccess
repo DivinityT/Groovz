@@ -1,0 +1,13 @@
+# Désactive register_argc_argv pour éviter les warnings
+php_flag register_argc_argv off
+
+# Désactive l'affichage des erreurs
+php_flag display_errors off
+php_flag display_startup_errors off
+
+# Active les logs d'erreurs dans un fichier
+php_flag log_errors on
+php_value error_log /home/groovzn/www/groovz_api/error.log
+
+# Masque les warnings deprecated
+php_value error_reporting 22527
